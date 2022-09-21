@@ -40,6 +40,7 @@ public class JobData {
 
         // Bonus mission; normal version returns allJobs
         return new ArrayList<>(allJobs);
+        // I don't understand this syntax above
     }
 
     /**
@@ -66,6 +67,7 @@ public class JobData {
         if (column.equals("all")){
             jobs = findByValue(value);
             return jobs;
+            //confused by this
         }
         for (Job job : allJobs) {
 
@@ -210,6 +212,8 @@ public class JobData {
         loadData();
         allEmployers.sort(new NameSorter());
         return allEmployers;
+        //why new above
+
     }
 
     public static ArrayList<Location> getAllLocations() {
